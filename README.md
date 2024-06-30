@@ -20,7 +20,7 @@ Write a function that prompts the user to input student marks. The input should 
 - D - 40 to 49
 - E - less than 40
 
-#### File: `studentGrade.js`
+#### File: `student.js`
 #### Description:
 Prompts the user for student marks and determines the corresponding grade based on predefined grading criteria.
 
@@ -30,7 +30,7 @@ Prompts the user for student marks and determines the corresponding grade based 
 Write a program that takes the speed of a car as input (e.g., 80). If the speed is less than 70, it should print “Ok”. Otherwise, for every 5 km/s above the speed limit (70), it should give the driver one demerit point and print the total number of demerit points.
 - For example, if the speed is 80, it should print: “Points: 2”. If the driver gets more than 12 points, the function should print: “License suspended”.
 
-#### File: `speedDetector.js`
+#### File: `speed.js`
 #### Description:
 Calculates demerit points for a car's speed exceeding the limit and determines if the driver's license should be suspended.
 
@@ -40,7 +40,7 @@ Calculates demerit points for a car's speed exceeding the limit and determines i
 Write a program to calculate an individual’s Net Salary by inputting basic salary and benefits. Calculate the payee (i.e., Tax), NHIF Deductions, NSSF Deductions, gross salary, and net salary using predefined rates.
 - Use KRA, NHIF, and NSSF values provided in the [link](https://www.aren.co.ke/payroll/taxrates.htm).
 
-#### File: `netSalaryCalculator.js`
+#### File: `net.js`
 #### Description:
 Computes an individual’s net salary considering basic salary, benefits, tax (PAYE), NHIF deductions, and NSSF deductions using predefined rates.
 
