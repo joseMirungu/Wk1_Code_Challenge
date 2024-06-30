@@ -63,12 +63,7 @@ Follow these steps to get started with the challenges:
    cd Wk1_Code_Challenge
    ```
 
-2. Navigate to the challenge folder you wish to explore:
-   ```bash
-   cd Challenge1  # Replace with Challenge2 or Challenge3 for other challenges
-   ```
-
-3. Open the JavaScript file in your preferred code editor to view or modify the solution.
+2. Open the JavaScript file in your preferred code editor to view or modify the solution.
 
 ## Usage
 
@@ -76,9 +71,9 @@ Run each JavaScript file using Node.js to see the output in your terminal or con
 
 Example:
 ```bash
-node studentGrade.js
-node speedDetector.js
-node netSalaryCalculator.js
+node student.js
+node speed.js
+node net.js
 ```
 
 ## Additional Resources
