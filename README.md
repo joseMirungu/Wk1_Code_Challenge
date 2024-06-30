@@ -1,7 +1,3 @@
-Certainly! Here's a revised README with a clear flow and eye-catching arrangement for your repository:
-
----
-
 # Week 1 Toy Problems
 
 Welcome to the Week 1 Toy Problems repository! This repository contains JavaScript solutions to fundamental programming challenges aimed at reinforcing basic concepts and problem-solving skills.
