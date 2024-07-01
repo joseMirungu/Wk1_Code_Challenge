@@ -1,3 +1,5 @@
+const prompt = require('prompt');
+
 const PAYE_RATES = [
     { min: 0, max: 288000, rate: 0.1 },
     { min: 288001, max: 388000, rate: 0.25 },
@@ -27,6 +29,8 @@ const NHIF_RATES = [
 ];
 
 const NSSF_RATE_EMPLOYEE = 0.06;
+
+prompt.start();
 
 function calculatePAYE(taxableIncome) {
     let tax = 0;
@@ -70,4 +74,18 @@ function calculateNetSalary(basicSalary, benefits) {
     console.log(`Net Salary: ${netSalary.toFixed(2)}`);
 }
 
-calculateNetSalary(100000, 20000);
+function promptUserInput() {
+    prompt.get(['basicSalary', 'benefits'], function (_, result) {
+        let basicSalary = Number(result.basicSalary);
+        let benefits = Number(result.benefits);
+
+        if (isNaN(basicSalary) || isNaN(benefits) || basicSalary < 0 || benefits < 0) {
+            console.log("Invalid input. Please enter valid numbers for basic salary and benefits.");
+            promptUserInput();
+        } else {
+            calculateNetSalary(basicSalary, benefits);
+        }
+    });
+}
+
+promptUserInput();
